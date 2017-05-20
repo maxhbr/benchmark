@@ -6,7 +6,7 @@ set -ex
 . env.sh
 
 WORK="$DIR/_work"
-OUT="$DIR/_out/$USER-$MACHINE"
+OUT="$DIR/out/$USER-$MACHINE"
 mkdir -p $OUT
 BENCHMARK="$DIR/benchmarks/$1.sh"
 if [ ! -f "$BENCHMARK" ]; then
@@ -15,14 +15,12 @@ fi
 . "$BENCHMARK"
 
 BOUT="$OUT/$1.log"
-BROUT="$OUT/$1.result"
 
-exec 1> >(tee -a $BOUT)
-exec 2> >(tee -a $BROUT)
+exec &> >(tee -a $BOUT)
 ################################################################################
 ## warmup
-# prepare
-# run
+prepare
+run
 
 ################################################################################
 ## test
