@@ -21,5 +21,5 @@ prepare() {
 
 run(){
     cd "$KERNEL"
-    make -s -j \$NUM_CPU_JOBS 2>&1
+    make -s -j $NUM_CPU_JOBS 2>&1
 }

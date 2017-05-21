@@ -4,6 +4,7 @@ DIR=$(pwd)
 
 set -ex
 . env.sh
+NUM_CPU_JOBS=$(grep -c ^processor /proc/cpuinfo)
 
 WORK="$DIR/_work"
 OUT="$DIR/out/$USER-$MACHINE/$(date +%Y-%m-%d)"
