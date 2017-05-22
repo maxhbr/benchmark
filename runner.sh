@@ -19,18 +19,23 @@ cat /proc/cpuinfo > "$OUT/cpuinfo"
 free > "$OUT/free"
 uname -a > "$OUT/uname"
 LOG="$OUT/_$1.log"
+exec &> >(tee -a $LOG)
 RESULT="$OUT/$1.result"
 
 ################################################################################
-## warmup
+## prepare
 prepare
+
+################################################################################
+## warmup
 $(getCMD)
 
 ################################################################################
 ## benchmark
-prepare
-exec &> >(tee -a $LOG)
 echo "start at: $(date)"
-perf stat -r 1 -d -o $RESULT $(getCMD)
+perf stat -r 10 -d -o $RESULT $(getCMD)
 echo "end at: $(date)"
+
+################################################################################
+## cleanup
 cleanup
