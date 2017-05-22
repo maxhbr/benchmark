@@ -7,7 +7,12 @@ set -ex
 NUM_CPU_JOBS=$(grep -c ^processor /proc/cpuinfo)
 
 WORK="$DIR/_work"
-OUT="$DIR/out/$USER-$MACHINE/$(date +%Y-%m-%d)"
+OUT="$DIR/out/$USER-$MACHINE"
+if acpi -a | grep -v "on-line" -q; then
+    OUT="$OUT-onBattery"
+fi
+OUT="$OUT/$(date +%Y-%m-%d)"
+
 mkdir -p $OUT
 BENCHMARK="$DIR/benchmarks/$1.sh"
 if [ ! -f "$BENCHMARK" ]; then
