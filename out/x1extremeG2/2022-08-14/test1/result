@@ -1,0 +1,20 @@
+# started on Sun Aug 14 20:45:14 2022
+
+
+ Performance counter stats for '/home/mhuber/MINE/REPOS/benchmark/benchmarks/test1.sh run /home/mhuber/MINE/REPOS/benchmark/out/x1extremeG2/2022-08-14/test1' (10 runs):
+
+              2.34 msec task-clock:u              #    0.831 CPUs utilized            ( +-  1.40% )
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+               250      page-faults:u             #  104.601 K/sec                    ( +-  0.22% )
+           2232356      cycles:u                  #    0.934 GHz                      ( +- 12.23% )  (42.26%)
+           3597878      instructions:u            #    1.83  insn per cycle           ( +-  4.87% )  (84.99%)
+            714751      branches:u                #  299.054 M/sec                    ( +-  0.81% )
+             34790      branch-misses:u           #    4.88% of all branches          ( +-  2.72% )
+            945756      L1-dcache-loads:u         #  395.707 M/sec                    ( +-  0.00% )
+             41641      L1-dcache-load-misses:u   #    4.40% of all L1-dcache accesses  ( +-  0.44% )
+     <not counted>      LLC-loads:u                                                   (0.00%)
+     <not counted>      LLC-load-misses:u                                             (0.00%)
+
+         0.0028121 +- 0.0000426 seconds time elapsed  ( +-  1.51% )
+

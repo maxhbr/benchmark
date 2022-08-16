@@ -1,0 +1,20 @@
+# started on Sun Aug 14 21:29:24 2022
+
+
+ Performance counter stats for '/home/mhuber/MINE/REPOS/benchmark/benchmarks/ort-gradle-build.sh run /home/mhuber/MINE/REPOS/benchmark/out/x1extremeG2/2022-08-14/ort-gradle-build' (10 runs):
+
+           1426.84 msec task-clock:u              #    1.062 CPUs utilized            ( +-  1.93% )
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+             24925      page-faults:u             #   16.916 K/sec                    ( +-  1.00% )
+        4402056768      cycles:u                  #    2.988 GHz                      ( +-  1.54% )  (62.91%)
+        4880132708      instructions:u            #    1.18  insn per cycle           ( +-  1.20% )  (75.38%)
+         974348893      branches:u                #  661.281 M/sec                    ( +-  1.22% )  (75.51%)
+          44723712      branch-misses:u           #    4.90% of all branches          ( +-  1.28% )  (75.60%)
+        1513971157      L1-dcache-loads:u         #    1.028 G/sec                    ( +-  1.39% )  (75.27%)
+         109892475      L1-dcache-load-misses:u   #    7.89% of all L1-dcache accesses  ( +-  1.52% )  (74.89%)
+          23434183      LLC-loads:u               #   15.905 M/sec                    ( +-  1.49% )  (49.54%)
+           1293165      LLC-load-misses:u         #    5.82% of all LL-cache accesses  ( +-  2.92% )  (50.20%)
+
+            1.3433 +- 0.0267 seconds time elapsed  ( +-  1.99% )
+
