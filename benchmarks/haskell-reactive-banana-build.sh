@@ -2,9 +2,16 @@
 
 set -euo pipefail
 
+cleanup() {
+    local out="$1"
+    rb="$out/reactive-banana"
+    rm -rf "$rb"
+}
+
 prepare() (
     local out="$1"
     set -x
+    cleanup
     git clone \
         --depth 1 \
         https://github.com/HeinrichApfelmus/reactive-banana \
@@ -20,12 +27,6 @@ run() {
     cd reactive-banana
     cabal build
     cabal clean
-}
-
-cleanup() {
-    local out="$1"
-    rb="$out/reactive-banana"
-    rm -rf "$rb"
 }
 
 cmd="$1"
