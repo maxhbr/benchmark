@@ -6,10 +6,11 @@ set -euo pipefail
 prepare() {
     local out="$1"
     set -x
-    if [[ ! -f "$out/ImageMagick-6.9.0-0.tar.bz2" ]]; then
-        (cd "$out"; wget http://www.phoronix-test-suite.com/benchmark-files/ImageMagick-6.9.0-0.tar.bz2)
+    cd "$out";
+    if [[ ! -f "ImageMagick-6.9.0-0.tar.bz2" ]]; then
+        wget http://www.phoronix-test-suite.com/benchmark-files/ImageMagick-6.9.0-0.tar.bz2
     fi
-    rm -rf node-v18.8.0
+    rm -rf ImageMagick-6.9.0-0/
     tar -xjf ImageMagick-6.9.0-0.tar.bz2
     cd ImageMagick-6.9.0-0/
     ./configure > /dev/null
@@ -19,6 +20,7 @@ prepare() {
 run() {
     local out="$1"
     cd "$out"
+    cd ImageMagick-6.9.0-0/
     make -s -j "$(nproc)"
     make clean
 }
