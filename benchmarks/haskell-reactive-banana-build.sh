@@ -11,7 +11,7 @@ cleanup() {
 prepare() (
     local out="$1"
     set -x
-    cleanup
+    cleanup "$out"
     git clone \
         --depth 1 \
         https://github.com/HeinrichApfelmus/reactive-banana \

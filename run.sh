@@ -7,6 +7,9 @@ ROOT="$( cd $(dirname "$0") && pwd)"
 getOutputFolder() {
     local OUT
     OUT="${ROOT}/out/$(hostname)"
+    if [[ -f /sys/firmware/acpi/platform_profile ]]; then
+        OUT="$OUT-$(cat /sys/firmware/acpi/platform_profile)"
+    fi
     if acpi -a | grep -v "on-line" -q; then
         OUT="$OUT/onBattery"
     fi
