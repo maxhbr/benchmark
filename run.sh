@@ -59,6 +59,8 @@ benchFromFile() {
         "$script" cleanup "$bOUT"
     } | tee "$bOUT/log"
     cat "$bOUT/result"
+    gzip "$bOUT/log"
+    git add "$bOUT/result" "$bOUT/log.gz"
 }
 
 benchesFromFiles() {

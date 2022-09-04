@@ -6,14 +6,14 @@ set -euo pipefail
 prepare() {
     local out="$1"
     set -x
-    if [[ ! -f "$out/node-v18.8.0.tar.xz" ]]; then
-        (cd "$out"; wget https://nodejs.org/download/release/v18.8.0/node-v18.8.0.tar.xz)
-    fi
+    mkdir -p "$out/workdir";
+    cd "$out/workdir"
+    wget -nc https://nodejs.org/download/release/v18.8.0/node-v18.8.0.tar.xz
 }
 
 run() {
     local out="$1"
-    cd "$out"
+    cd "$out/workdir"
     rm -rf node-v18.8.0
     tar -xf node-v18.8.0.tar.xz
     cd node-v18.8.0
@@ -23,8 +23,7 @@ run() {
 
 cleanup() {
     local out="$1"
-    cd "$out"
-    rm -rf node-v18.8.0
+    rm -rf "$out/workdir"
 }
 
 cmd="$1"

@@ -6,7 +6,8 @@ set -euo pipefail
 prepare() {
     local out="$1"
     set -x
-    cd "$out";
+    mkdir -p "$out/workdir";
+    cd "$out/workdir";
     if [[ ! -f "ImageMagick-6.9.0-0.tar.bz2" ]]; then
         wget http://www.phoronix-test-suite.com/benchmark-files/ImageMagick-6.9.0-0.tar.bz2
     fi
@@ -19,16 +20,14 @@ prepare() {
 
 run() {
     local out="$1"
-    cd "$out"
-    cd ImageMagick-6.9.0-0/
+    cd "$out/workdir/ImageMagick-6.9.0-0/"
     make -s -j "$(nproc)"
     make clean
 }
 
 cleanup() {
     local out="$1"
-    cd "$out"
-    rm -rf ImageMagick-6.9.0-0/
+    rm -rf "$out/workdir"
 }
 
 cmd="$1"

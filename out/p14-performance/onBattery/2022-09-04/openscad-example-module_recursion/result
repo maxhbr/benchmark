@@ -1,0 +1,20 @@
+# started on Sun Sep  4 10:21:23 2022
+
+
+ Performance counter stats for '/home/mhuber/MINE/REPOS/benchmark/benchmarks/openscad-example-module_recursion.sh run /home/mhuber/MINE/REPOS/benchmark/out/p14-performance/onBattery/2022-09-04/openscad-example-module_recursion' (10 runs):
+
+         118876.10 msec task-clock:u              #    0.989 CPUs utilized            ( +-  0.67% )
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+            168297      page-faults:u             #    1.400 K/sec                    ( +-  0.65% )
+      502391796123      cycles:u                  #    4.179 GHz                      ( +-  0.58% )  (99.99%)
+     1579630206666      instructions:u            #    3.11  insn per cycle           ( +-  0.47% )  (99.99%)
+      318449505809      branches:u                #    2.649 G/sec                    ( +-  0.46% )  (99.99%)
+        1867151163      branch-misses:u           #    0.58% of all branches          ( +-  0.65% )  (99.99%)
+      421673900618      L1-dcache-loads:u         #    3.507 G/sec                    ( +-  0.47% )  (99.99%)
+        2375346166      L1-dcache-load-misses:u   #    0.56% of all L1-dcache accesses  ( +-  1.17% )  (99.99%)
+         581247634      LLC-loads:u               #    4.835 M/sec                    ( +-  2.89% )  (99.99%)
+          43779958      LLC-load-misses:u         #    7.46% of all LL-cache accesses  ( +-  1.63% )  (99.99%)
+
+           120.238 +- 0.795 seconds time elapsed  ( +-  0.66% )
+
