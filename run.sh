@@ -23,6 +23,7 @@ writeStats() {
     cat /proc/cpuinfo > "$OUT/cpuinfo"
     free > "$OUT/free"
     uname -a > "$OUT/uname"
+    git add "$OUT/cpuinfo" "$OUT/free" "$OUT/uname"
 }
 
 benchFio() {
@@ -33,6 +34,7 @@ benchFio() {
             tee -a "$OUT/random-4K-reads"
         fio --name TEST --eta-newline=5s --filename=temp.file --rw=randrw --size=2g --io_size=10g --blocksize=4k --ioengine=libaio --fsync=1 --iodepth=1 --direct=1 --numjobs=1 --runtime=60 --group_reporting |
             tee -a "$OUT/Mixed-random-4K-read-and-write"
+        git add "$OUT"
     fi
 }
 
@@ -41,6 +43,7 @@ benchGlmark() {
     if [[ ! -f "$OUT" ]]; then
         glmark2 |
             tee "$OUT"
+        git add "$OUT"
     fi
 }
 
@@ -78,6 +81,9 @@ main() {
 
     if [[ $# -eq 0 ]]; then
         benchesFromFiles "$OUT"
+        benchFio "$OUT"
+        benchGlmark "$OUT"
+    elif [[ "$1" == "--other" ]]; then
         benchFio "$OUT"
         benchGlmark "$OUT"
     else
