@@ -5,7 +5,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 400.000
+cpu MHz		: 612.837
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -33,7 +33,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 400.000
+cpu MHz		: 4381.476
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -61,7 +61,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 3455.967
+cpu MHz		: 2000.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -89,7 +89,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 2000.000
+cpu MHz		: 3795.812
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -117,7 +117,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 2622.034
+cpu MHz		: 400.156
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -173,7 +173,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 400.081
+cpu MHz		: 400.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -229,7 +229,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 400.331
+cpu MHz		: 400.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -285,7 +285,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 4024.683
+cpu MHz		: 3501.509
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20
@@ -341,7 +341,7 @@ model		: 154
 model name	: 12th Gen Intel(R) Core(TM) i7-1280P
 stepping	: 3
 microcode	: 0x421
-cpu MHz		: 470.976
+cpu MHz		: 2000.000
 cache size	: 24576 KB
 physical id	: 0
 siblings	: 20

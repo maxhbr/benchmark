@@ -1,0 +1,20 @@
+# started on Sat Sep  3 20:13:04 2022
+
+
+ Performance counter stats for '/home/mhuber/MINE/REPOS/benchmark/benchmarks/node-js-build.sh run /home/mhuber/MINE/REPOS/benchmark/out/p14-performance/2022-09-03/node-js-build' (10 runs):
+
+       20627516.33 msec task-clock:u              #   19.518 CPUs utilized            ( +-  0.66% )
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+         214395757      page-faults:u             #   10.680 K/sec                    ( +-  0.00% )
+    27738437264796      cycles:u                  #    1.382 GHz                      ( +-  0.41% )  (73.91%)
+    28762901686519      instructions:u            #    1.02  insn per cycle           ( +-  0.26% )  (73.91%)
+     6360307808083      branches:u                #  316.844 M/sec                    ( +-  0.25% )  (73.91%)
+      112370832933      branch-misses:u           #    1.75% of all branches          ( +-  0.31% )  (73.91%)
+     7619977606524      L1-dcache-loads:u         #  379.596 M/sec                    ( +-  0.26% )  (73.91%)
+      356542264549      L1-dcache-load-misses:u   #    4.65% of all L1-dcache accesses  ( +-  0.27% )  (73.91%)
+       73655739037      LLC-loads:u               #    3.669 M/sec                    ( +-  0.33% )  (73.91%)
+       35639954509      LLC-load-misses:u         #   47.97% of all LL-cache accesses  ( +-  0.31% )  (73.91%)
+
+           1056.85 +- 6.73 seconds time elapsed  ( +-  0.64% )
+
