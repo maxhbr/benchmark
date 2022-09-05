@@ -1,7 +1,10 @@
-#!/usr/bin/env nix-shell
-#! nix-shell -i bash -p gcc
+#!/usr/bin/env bash
 # see also: https://openbenchmarking.org/innhold/2ebe0891102137cce40ec271559957c7c518c984
 set -euo pipefail
+
+requirements() {
+    echo "gcc python"
+}
 
 prepare() {
     local out="$1"

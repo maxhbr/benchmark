@@ -2,9 +2,13 @@
 
 set -euo pipefail
 
+requirements() {
+    echo "git cabal"
+}
+
 cleanup() {
     local out="$1"
-    rm -rf "$out/tmp"
+    rm -rf "$out/workdir"
 }
 
 prepare() (
@@ -16,13 +20,13 @@ prepare() (
         https://github.com/HeinrichApfelmus/reactive-banana \
         --branch "v1.3.1.0" \
         --single-branch \
-        "$out/tmp/reactive-banana"
+        "$out/workdir/reactive-banana"
     cabal update
 )
 
 run() {
     local out="$1"
-    cd "$out/tmp/reactive-banana"
+    cd "$out/workdir/reactive-banana"
     cd reactive-banana
     cabal build
     cabal clean

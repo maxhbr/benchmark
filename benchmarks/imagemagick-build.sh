@@ -1,16 +1,17 @@
-#!/usr/bin/env nix-shell
-#! nix-shell -i bash -p gcc
+#!/usr/bin/env bash
 # see also: https://openbenchmarking.org/innhold/d18befcc4fb18537d42b71fdab18c2aeeb261fed
 set -euo pipefail
+
+requirements() {
+    echo "gcc"
+}
 
 prepare() {
     local out="$1"
     set -x
     mkdir -p "$out/workdir";
     cd "$out/workdir";
-    if [[ ! -f "ImageMagick-6.9.0-0.tar.bz2" ]]; then
-        wget http://www.phoronix-test-suite.com/benchmark-files/ImageMagick-6.9.0-0.tar.bz2
-    fi
+    wget -nc http://www.phoronix-test-suite.com/benchmark-files/ImageMagick-6.9.0-0.tar.bz2
     rm -rf ImageMagick-6.9.0-0/
     tar -xjf ImageMagick-6.9.0-0.tar.bz2
     cd ImageMagick-6.9.0-0/

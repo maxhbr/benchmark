@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+requirements() {
+    echo "gcc"
+}
+
 prepare() {
     echo "prepare"
 }

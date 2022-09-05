@@ -57,25 +57,28 @@ tree(len, thickness, levels);
 EOF
 }
 
+requirements() {
+    echo "openscad"
+}
+
 prepare() {
     local out="$1"
-    local scad="$out/module_recursion.scad"
+    mkdir -p "$out/workdir"
+    local scad="$out/workdir/module_recursion.scad"
     [[ -f "$scad" ]] || writeScript "$scad"
 }
 
 run() {
     local out="$1"
-    local scad="$out/module_recursion.scad"
-    local stl="$out/module_recursion.stl"
+    local scad="$out/workdir/module_recursion.scad"
+    local stl="$out/workdir/module_recursion.stl"
     openscad --hardwarnings -o "$stl" "$scad"
     rm "$stl"
 }
 
 cleanup() {
     local out="$1"
-    local scad="$out/module_recursion.scad"
-    local stl="$out/module_recursion.stl"
-    rm -f "$scad" "$stl"
+    rm -f "$out/workdir"
 }
 
 cmd="$1"
