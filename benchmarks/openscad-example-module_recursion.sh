@@ -78,7 +78,7 @@ run() {
 
 cleanup() {
     local out="$1"
-    rm -f "$out/workdir"
+    rm -r "$out/workdir"
 }
 
 cmd="$1"

@@ -1,0 +1,20 @@
+# started on Fri Sep  9 06:06:48 2022
+
+
+ Performance counter stats for '/home/mhuber/benchmark/benchmarks/haskell-reactive-banana-build.sh run /home/mhuber/benchmark/out/spare/2022-09-08/haskell-reactive-banana-build' (10 runs):
+
+           8065.67 msec task-clock:u              #    0.986 CPUs utilized            ( +-  0.22% )
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+            298853      page-faults:u             #   36.924 K/sec                    ( +-  0.15% )
+       20511540702      cycles:u                  #    2.534 GHz                      ( +-  0.12% )  (63.67%)
+       27456567943      instructions:u            #    1.34  insn per cycle           ( +-  0.09% )  (75.71%)
+        5313223851      branches:u                #  656.466 M/sec                    ( +-  0.10% )  (75.49%)
+         237297508      branch-misses:u           #    4.47% of all branches          ( +-  0.14% )  (75.74%)
+        6711953026      L1-dcache-loads:u         #  829.283 M/sec                    ( +-  0.09% )  (75.54%)
+         401493401      L1-dcache-load-misses:u   #    6.01% of all L1-dcache accesses  ( +-  0.21% )  (75.44%)
+          93049274      LLC-loads:u               #   11.497 M/sec                    ( +-  0.26% )  (50.62%)
+          20464836      LLC-load-misses:u         #   21.95% of all LL-cache accesses  ( +-  0.83% )  (51.00%)
+
+            8.1825 +- 0.0175 seconds time elapsed  ( +-  0.21% )
+
