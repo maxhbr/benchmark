@@ -1,0 +1,16 @@
+* How-To
+** NixOS / Nix
+run ~./nix.run.sh~.
+** Otherwise
+install dependencies and run ~./run.sh~.
+* Results
+** Notebooks
+| Host @ CPU                  |  Node.js | imagemagick | openscad |
+|-----------------------------+----------+-------------+----------|
+| t460p @ i7-6700HQ           | 2467.825 |      73.105 |   199.70 |
+| x1 extreme Gen 2 @ i7-9750H |  1649.75 |      64.219 |   194.47 |
+| p14s @ i7-1280P             |  1056.85 |     38.1766 |  116.995 |
+** Non-Notebooks
+| Host @ CPU                 | Node.js | imagemagick | openscad |
+|----------------------------+---------+-------------+----------|
+| workstation @ Ryzen 5 3600 | 914.275 |     32.5281 |          |
