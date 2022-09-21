@@ -1,0 +1,23 @@
+# started on Sat Sep 17 12:02:10 2022
+
+
+ Performance counter stats for '/home/jakob/code/tng_intern/laptop_setup/benchmark_von_max/benchmark/benchmarks/openscad-example-module_recursion.sh run /home/jakob/code/tng_intern/laptop_setup/benchmark_von_max/benchmark/out/jakob-ThinkPad-P14s-Gen-2a-balanced/2022-09-17/openscad-example-module_recursion' (10 runs):
+
+         112543.58 msec task-clock                #    0.979 CPUs utilized            ( +-  0.68% )
+               418      context-switches          #    3.638 /sec                     ( +-  7.13% )
+                64      cpu-migrations            #    0.557 /sec                     ( +- 10.02% )
+            166766      page-faults               #    1.451 K/sec                    ( +-  0.37% )
+      474687648488      cycles                    #    4.131 GHz                      ( +-  0.57% )  (62.50%)
+         421006206      stalled-cycles-frontend   #    0.09% frontend cycles idle     ( +- 10.14% )  (62.51%)
+         556731131      stalled-cycles-backend    #    0.11% backend cycles idle      ( +- 10.42% )  (62.51%)
+     1357684895418      instructions              #    2.79  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  ( +-  0.43% )  (62.50%)
+      263935543584      branches                  #    2.297 G/sec                    ( +-  0.43% )  (62.50%)
+        1668850276      branch-misses             #    0.63% of all branches          ( +-  1.06% )  (62.50%)
+      467402592825      L1-dcache-loads           #    4.068 G/sec                    ( +-  0.43% )  (62.50%)
+        3727697808      L1-dcache-load-misses     #    0.79% of all L1-dcache accesses  ( +-  0.48% )  (62.50%)
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+
+           114.919 +- 0.763 seconds time elapsed  ( +-  0.66% )
+
