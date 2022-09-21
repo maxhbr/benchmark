@@ -1,0 +1,23 @@
+# started on Sat Sep 17 17:54:11 2022
+
+
+ Performance counter stats for '/home/jakob/code/tng_intern/laptop_setup/benchmark_von_max/benchmark/benchmarks/node-js-build.sh run /home/jakob/code/tng_intern/laptop_setup/benchmark_von_max/benchmark/out/jakob-ThinkPad-P14s-Gen-2a-balanced/2022-09-17/node-js-build' (10 runs):
+
+       17192344.42 msec task-clock                #   15.385 CPUs utilized            ( +-  0.11% )
+           1986805      context-switches          #  116.484 /sec                     ( +-  0.70% )
+             27314      cpu-migrations            #    1.601 /sec                     ( +-  1.05% )
+         203570341      page-faults               #   11.935 K/sec                    ( +-  0.00% )
+    38963135089350      cycles                    #    2.284 GHz                      ( +-  0.04% )  (62.61%)
+       26695911396      stalled-cycles-frontend   #    0.07% frontend cycles idle     ( +-  0.26% )  (62.62%)
+     1673728881801      stalled-cycles-backend    #    4.28% backend cycles idle      ( +-  0.11% )  (62.62%)
+    31729789256204      instructions              #    0.81  insn per cycle         
+                                                  #    0.05  stalled cycles per insn  ( +-  0.00% )  (62.63%)
+     6687469639994      branches                  #  392.078 M/sec                    ( +-  0.00% )  (62.63%)
+      156182567961      branch-misses             #    2.34% of all branches          ( +-  0.01% )  (62.63%)
+    11714145910408      L1-dcache-loads           #  686.786 M/sec                    ( +-  0.00% )  (62.63%)
+      888248858754      L1-dcache-load-misses     #    7.58% of all L1-dcache accesses  ( +-  0.01% )  (62.62%)
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+
+           1117.46 +- 1.27 seconds time elapsed  ( +-  0.11% )
+
