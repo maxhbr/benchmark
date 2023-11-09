@@ -1,0 +1,40 @@
+TEST: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=libaio, iodepth=1
+...
+fio-3.35
+Starting 32 processes
+TEST: Laying out IO file (1 file / 2048MiB)
+fio: pid=98965, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98958, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98950, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98952, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98963, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98978, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98966, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98972, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98959, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98969, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98956, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98954, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98968, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98960, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98975, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98948, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98977, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98976, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98957, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98973, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98949, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98951, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98967, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98955, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98974, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98961, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98964, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98953, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98970, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98962, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98971, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+fio: pid=98947, err=22/file:filesetup.c:794, func=open(temp.file), error=Invalid argument
+
+
+Run status group 0 (all jobs):

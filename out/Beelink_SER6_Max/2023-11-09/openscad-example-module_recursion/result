@@ -1,0 +1,23 @@
+# started on Thu Nov  9 19:25:02 2023
+
+
+ Performance counter stats for '/home/mhuber/benchmark/benchmarks/openscad-example-module_recursion.sh run /home/mhuber/benchmark/out/iso/2023-11-09/openscad-example-module_recursion' (10 runs):
+
+         113990.72 msec task-clock:u                     #    0.980 CPUs utilized            ( +-  0.93% )
+                 0      context-switches:u               #    0.000 /sec                   
+                 0      cpu-migrations:u                 #    0.000 /sec                   
+            166789      page-faults:u                    #    1.434 K/sec                    ( +-  0.74% )
+      531799873769      cycles:u                         #    4.573 GHz                      ( +-  0.93% )  (75.00%)
+         917838182      stalled-cycles-frontend:u        #    0.17% frontend cycles idle     ( +-  2.40% )  (75.00%)
+         456418172      stalled-cycles-backend:u         #    0.08% backend cycles idle      ( +- 19.62% )  (75.00%)
+     1496721980387      instructions:u                   #    2.77  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  ( +-  0.87% )  (75.00%)
+      299456933688      branches:u                       #    2.575 G/sec                    ( +-  0.87% )  (75.00%)
+        1691924475      branch-misses:u                  #    0.56% of all branches          ( +-  1.31% )  (75.00%)
+      559716717896      L1-dcache-loads:u                #    4.813 G/sec                    ( +-  0.85% )  (75.00%)
+        5173182519      L1-dcache-load-misses:u          #    0.91% of all L1-dcache accesses  ( +-  2.54% )  (75.00%)
+   <not supported>      LLC-loads:u                                                 
+   <not supported>      LLC-load-misses:u                                           
+
+            116.30 +- 1.06 seconds time elapsed  ( +-  0.91% )
+

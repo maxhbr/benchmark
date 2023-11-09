@@ -1,0 +1,23 @@
+# started on Thu Nov  9 21:15:38 2023
+
+
+ Performance counter stats for '/home/mhuber/benchmark/benchmarks/node-js-build.sh run /home/mhuber/benchmark/out/iso/2023-11-09/node-js-build' (10 runs):
+
+       12922067.55 msec task-clock:u                     #   15.089 CPUs utilized            ( +-  0.01% )
+                 0      context-switches:u               #    0.000 /sec                   
+                 0      cpu-migrations:u                 #    0.000 /sec                   
+         205619266      page-faults:u                    #   15.902 K/sec                    ( +-  0.00% )
+    47659323021450      cycles:u                         #    3.686 GHz                      ( +-  0.01% )  (75.05%)
+       18906875104      stalled-cycles-frontend:u        #    0.04% frontend cycles idle     ( +-  0.03% )  (75.05%)
+     1105349322935      stalled-cycles-backend:u         #    2.32% backend cycles idle      ( +-  0.04% )  (75.06%)
+    32416495404871      instructions:u                   #    0.68  insn per cycle         
+                                                  #    0.03  stalled cycles per insn  ( +-  0.00% )  (75.06%)
+     7217123044660      branches:u                       #  558.165 M/sec                    ( +-  0.00% )  (75.05%)
+      204585263066      branch-misses:u                  #    2.83% of all branches          ( +-  0.03% )  (75.05%)
+    12531273909501      L1-dcache-loads:u                #  969.156 M/sec                    ( +-  0.00% )  (75.05%)
+      882987687054      L1-dcache-load-misses:u          #    7.05% of all L1-dcache accesses  ( +-  0.01% )  (75.05%)
+   <not supported>      LLC-loads:u                                                 
+   <not supported>      LLC-load-misses:u                                           
+
+           856.368 +- 0.240 seconds time elapsed  ( +-  0.03% )
+
