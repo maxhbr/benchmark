@@ -19,4 +19,5 @@ install dependencies and run ~./run.sh~.
 | Beelink SER6 Max @ Ryzen 7 7735HS | 856.368 | 33.1906 | 116.30 | 
 
 * See also:
+- https://openbenchmarking.org
 - https://github.com/ThomasKaiser/sbc-bench

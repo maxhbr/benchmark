@@ -58,6 +58,15 @@ benchGlmark() {
     fi
 }
 
+bench7zip() {
+    local OUT="$1/7zb"
+    if [[ ! -f "$OUT" ]] && guardForBins "7z"; then
+        7z b | 
+          tee "$OUT"
+        git add "$OUT"
+    fi
+}
+
 benchFromFile() {
     guardForBins "perf" || return 0
     local OUT="$1"
@@ -93,6 +102,7 @@ benchesFromFunctions() {
     local OUT="$1"
     benchFio "$OUT"
     benchGlmark "$OUT"
+    bench7zip "$OUT"
 }
 
 main() {
