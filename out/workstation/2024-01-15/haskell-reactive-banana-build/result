@@ -1,0 +1,23 @@
+# started on Mon Jan 15 14:11:17 2024
+
+
+ Performance counter stats for '/home/mhuber/MINE/benchmark/benchmarks/haskell-reactive-banana-build.sh run /home/mhuber/MINE/benchmark/out/workstation/2024-01-15/haskell-reactive-banana-build' (10 runs):
+
+           4931.26 msec task-clock:u                     #    0.964 CPUs utilized               ( +-  0.20% )
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+            244721      page-faults:u                    #   49.626 K/sec                       ( +-  0.29% )
+       19463715962      cycles:u                         #    3.947 GHz                         ( +-  0.17% )  (75.62%)
+         139833605      stalled-cycles-frontend:u        #    0.72% frontend cycles idle        ( +-  0.54% )  (75.55%)
+         117216887      stalled-cycles-backend:u         #    0.60% backend cycles idle         ( +-  8.55% )  (75.29%)
+       28158185365      instructions:u                   #    1.45  insn per cycle            
+                                                  #    0.00  stalled cycles per insn     ( +-  0.12% )  (75.17%)
+        5253500139      branches:u                       #    1.065 G/sec                       ( +-  0.10% )  (75.15%)
+         229600057      branch-misses:u                  #    4.37% of all branches             ( +-  0.06% )  (75.32%)
+       11351915842      L1-dcache-loads:u                #    2.302 G/sec                       ( +-  0.10% )  (75.64%)
+         397191387      L1-dcache-load-misses:u          #    3.50% of all L1-dcache accesses   ( +-  0.14% )  (75.65%)
+   <not supported>      LLC-loads:u                                                           
+   <not supported>      LLC-load-misses:u                                                     
+
+            5.1161 +- 0.0103 seconds time elapsed  ( +-  0.20% )
+

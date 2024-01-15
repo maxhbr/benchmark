@@ -1,0 +1,23 @@
+# started on Mon Jan 15 14:12:50 2024
+
+
+ Performance counter stats for '/home/mhuber/MINE/benchmark/benchmarks/imagemagick-build.sh run /home/mhuber/MINE/benchmark/out/workstation/2024-01-15/imagemagick-build' (10 runs):
+
+         314692.63 msec task-clock:u                     #   13.858 CPUs utilized               ( +-  0.09% )
+                 0      context-switches:u               #    0.000 /sec                      
+                 0      cpu-migrations:u                 #    0.000 /sec                      
+           6703013      page-faults:u                    #   21.300 K/sec                       ( +-  0.01% )
+     1180067956548      cycles:u                         #    3.750 GHz                         ( +-  0.05% )  (75.16%)
+        3579482458      stalled-cycles-frontend:u        #    0.30% frontend cycles idle        ( +-  0.07% )  (75.17%)
+       14064981617      stalled-cycles-backend:u         #    1.19% backend cycles idle         ( +-  0.20% )  (75.14%)
+     1293292891611      instructions:u                   #    1.10  insn per cycle            
+                                                  #    0.01  stalled cycles per insn     ( +-  0.01% )  (75.14%)
+      277500214327      branches:u                       #  881.814 M/sec                       ( +-  0.01% )  (75.14%)
+        6720787119      branch-misses:u                  #    2.42% of all branches             ( +-  0.04% )  (75.14%)
+      501202399887      L1-dcache-loads:u                #    1.593 G/sec                       ( +-  0.01% )  (75.15%)
+       22152344230      L1-dcache-load-misses:u          #    4.42% of all L1-dcache accesses   ( +-  0.02% )  (75.16%)
+   <not supported>      LLC-loads:u                                                           
+   <not supported>      LLC-load-misses:u                                                     
+
+           22.7077 +- 0.0452 seconds time elapsed  ( +-  0.20% )
+

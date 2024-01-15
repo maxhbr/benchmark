@@ -16,6 +16,7 @@ install dependencies and run ~./run.sh~.
 | Host @ CPU                 | Node.js | imagemagick | openscad |
 |----------------------------+---------+-------------+----------|
 | workstation @ Ryzen 5 3600 | 914.275 |     32.5281 |          |
+| workstation @ Ryzen 9 5900X | 522.893 | 22.7077 | 111.85 |
 | Beelink SER6 Max @ Ryzen 7 7735HS | 856.368 | 33.1906 | 116.30 | 
 
 * See also:
